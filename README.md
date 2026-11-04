@@ -62,50 +62,21 @@ confirmed.
 
 ## 1.3 Definitions, Acronyms and Abbreviations
 
-  -----------------------------------------------------------------------
-  Term                                Definition
-  ----------------------------------- -----------------------------------
-  SRS                                 Software Requirements Specification
-
-  Admin                               User with full access to system
-                                      administration functions
-
-  Employee                            Staff member who manages daily
-                                      snooker-centre operations
-
-  Customer                            Snooker player who registers and
-                                      uses the system
-
-  Branch                              A physical Ant Billiard centre
-                                      location
-
-  Booking                             A customer's request to reserve a
-                                      snooker table for a selected date
-                                      and time
-
-  Table status                        The current operational or
-                                      reservation state of a snooker
-                                      table
-
-  Daily check-in                      Customer activity that earns daily
-                                      points
-
-  Employee check-in                   The operational process of
-                                      recording a customer's arrival at
-                                      the centre
-
-  Leaderboard                         Ranking of players based on the
-                                      total number of wins
-
-  Voucher                             A reward that can be redeemed using
-                                      points or issued by an admin
-
-  Double elimination                  Tournament format in which a
-                                      participant is eliminated after two
-                                      losses
-
-  TBC                                 To Be Confirmed
-  -----------------------------------------------------------------------
+| Term | Definition |
+| --- | --- |
+| SRS | Software Requirements Specification |
+| Admin | User with full access to system administration functions |
+| Employee | Staff member who manages daily snooker-centre operations |
+| Customer | Snooker player who registers and uses the system |
+| Branch | A physical Ant Billiard centre location |
+| Booking | A customer's request to reserve a snooker table for a selected date and time |
+| Table status | The current operational or reservation state of a snooker table |
+| Daily check-in | Customer activity that earns daily points |
+| Employee check-in | The operational process of recording a customer's arrival at the centre |
+| Leaderboard | Ranking of players based on the total number of wins |
+| Voucher | A reward that can be redeemed using points or issued by an admin |
+| Double elimination | Tournament format in which a participant is eliminated after two losses |
+| TBC | To Be Confirmed |
 
 # 2. Overall Description
 
@@ -132,59 +103,20 @@ notifications and WhatsApp notifications.
 
 The main functions of the system are summarized below.
 
-  -----------------------------------------------------------------------
-  Module                              Main functions
-  ----------------------------------- -----------------------------------
-  Customer management                 Customer registration, login and
-                                      customer information management
-
-  Admin management                    Full system access, employee
-                                      registration, tournament creation,
-                                      voucher management, announcements
-                                      and reports
-
-  Employee management                 Booking review and approval, table
-                                      availability updates, customer
-                                      check-in, customer and tournament
-                                      management, player-point entry
-
-  Table management                    Display and update table
-                                      availability and status
-
-  Booking management                  Select date and time, submit
-                                      booking request, payment and
-                                      rescheduling
-
-  Payment                             Process online payments for table
-                                      bookings and tournament
-                                      registration fees
-
-  Gamification                        Points for bookings, daily
-                                      check-ins, tournaments and tasks
-
-  Leaderboard                         Rank players based on total wins
-                                      recorded by employees
-
-  Rewards                             Point redemption, admin-issued
-                                      vouchers, booking discounts and
-                                      reward levels
-
-  Tournament management               Admin-created tournaments,
-                                      registration fees,
-                                      double-elimination format,
-                                      automatic bracket generation and
-                                      result management
-
-  Notification                        Booking confirmation, booking
-                                      reminder, voucher reward, daily
-                                      check-in reward and tournament
-                                      announcement through WhatsApp and
-                                      email
-
-  Reporting                           Booking sales reports, booking
-                                      statistics, system reports and
-                                      employee activity logs
-  -----------------------------------------------------------------------
+| Module | Main functions |
+| --- | --- |
+| Customer management | Customer registration, login and customer information management |
+| Admin management | Full system access, employee registration, tournament creation, voucher management, announcements and reports |
+| Employee management | Booking review and approval, table availability updates, customer check-in, customer and tournament management, player-point entry |
+| Table management | Display and update table availability and status |
+| Booking management | Select date and time, submit booking request, payment and rescheduling |
+| Payment | Process online payments for table bookings and tournament registration fees |
+| Gamification | Points for bookings, daily check-ins, tournaments and tasks |
+| Leaderboard | Rank players based on total wins recorded by employees |
+| Rewards | Point redemption, admin-issued vouchers, booking discounts and reward levels |
+| Tournament management | Admin-created tournaments, registration fees, double-elimination format, automatic bracket generation and result management |
+| Notification | Booking confirmation, booking reminder, voucher reward, daily check-in reward and tournament announcement through WhatsApp and email |
+| Reporting | Booking sales reports, booking statistics, system reports and employee activity logs |
 
 ## 2.3 User Classes and Characteristics
 
@@ -239,26 +171,16 @@ Expected characteristics and access:
 
 The system is expected to operate in the following environment:
 
-  -----------------------------------------------------------------------
-  Item                                Requirement
-  ----------------------------------- -----------------------------------
-  Application platform                Web-based application
-
-  User access                         Web browser
-
-  Interface                           Responsive website
-
-  Backend framework                   Laravel
-
-  Frontend scripting                  JavaScript
-
-  Database management system          PostgreSQL
-
-  Hosting                             Online hosting
-
-  External services                   Payment gateway, email service and
-                                      WhatsApp service
-  -----------------------------------------------------------------------
+| Item | Requirement |
+| --- | --- |
+| Application platform | Web-based application |
+| User access | Web browser |
+| Interface | Responsive website |
+| Backend framework | Laravel |
+| Frontend scripting | JavaScript |
+| Database management system | PostgreSQL |
+| Hosting | Online hosting |
+| External services | Payment gateway, email service and WhatsApp service |
 
 The exact supported browsers, minimum device specifications, server
 specifications and hosting provider have not been specified.
@@ -333,147 +255,47 @@ system must provide.
 
 ### 3.1.1 Account and Access Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-001                  The system shall allow  Customer
-                          customers to register   
-                          their own accounts.     
-
-  FR-002                  The system shall        All users
-                          provide login access    
-                          for customers, admins   
-                          and employees.          
-
-  FR-003                  The system shall        All users
-                          restrict system         
-                          functions according to  
-                          the user's role.        
-
-  FR-004                  The system shall allow  Admin
-                          admins to register      
-                          employee accounts.      
-
-  FR-005                  The system shall allow  Admin, Employee
-                          admins and employees to 
-                          manage customer         
-                          information according   
-                          to their access         
-                          permissions.            
-
-  FR-006                  The system shall        Admin
-                          provide admins with     
-                          full access to system   
-                          functions.              
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-001 | The system shall allow customers to register their own accounts. | Customer |
+| FR-002 | The system shall provide login access for customers, admins and employees. | All users |
+| FR-003 | The system shall restrict system functions according to the user's role. | All users |
+| FR-004 | The system shall allow admins to register employee accounts. | Admin |
+| FR-005 | The system shall allow admins and employees to manage customer information according to their access permissions. | Admin, Employee |
+| FR-006 | The system shall provide admins with full access to system functions. | Admin |
 
 ### 3.1.2 Branch and Table Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-007                  The system shall        Admin
-                          support multiple        
-                          branches under one Ant  
-                          Billiard business.      
-
-  FR-008                  The system shall allow  Employee
-                          employees to update     
-                          table availability.     
-
-  FR-009                  The system shall allow  Employee
-                          employees to manually   
-                          update table status.    
-
-  FR-010                  The system shall        System
-                          maintain the table      
-                          statuses Available,     
-                          Occupied, Reserved and  
-                          Maintenance.            
-
-  FR-011                  The system shall allow  Customer
-                          customers to view       
-                          available tables after  
-                          logging in.             
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-007 | The system shall support multiple branches under one Ant Billiard business. | Admin |
+| FR-008 | The system shall allow employees to update table availability. | Employee |
+| FR-009 | The system shall allow employees to manually update table status. | Employee |
+| FR-010 | The system shall maintain the table statuses Available, Occupied, Reserved and Maintenance. | System |
+| FR-011 | The system shall allow customers to view available tables after logging in. | Customer |
 
 ### 3.1.3 Booking Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-012                  The system shall allow  Customer
-                          customers to select a   
-                          booking date and time.  
-
-  FR-013                  The system shall allow  Customer
-                          customers to submit a   
-                          table booking request.  
-
-  FR-014                  The system shall        Employee
-                          require employee        
-                          approval before a       
-                          booking is confirmed.   
-
-  FR-015                  The system shall allow  Employee
-                          employees to view and   
-                          manage booking          
-                          requests.               
-
-  FR-016                  The system shall allow  Customer
-                          customers to request    
-                          booking rescheduling.   
-
-  FR-017                  The system shall not    System
-                          provide customers with  
-                          a booking cancellation  
-                          function.               
-
-  FR-018                  The system shall allow  Employee
-                          employees to check in   
-                          customers when they     
-                          arrive at the centre.   
-
-  FR-019                  The system shall allow  Employee
-                          employees to ensure the 
-                          reserved table is ready 
-                          before the customer     
-                          arrives.                
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-012 | The system shall allow customers to select a booking date and time. | Customer |
+| FR-013 | The system shall allow customers to submit a table booking request. | Customer |
+| FR-014 | The system shall require employee approval before a booking is confirmed. | Employee |
+| FR-015 | The system shall allow employees to view and manage booking requests. | Employee |
+| FR-016 | The system shall allow customers to request booking rescheduling. | Customer |
+| FR-017 | The system shall not provide customers with a booking cancellation function. | System |
+| FR-018 | The system shall allow employees to check in customers when they arrive at the centre. | Employee |
+| FR-019 | The system shall allow employees to ensure the reserved table is ready before the customer arrives. | Employee |
 
 ### 3.1.4 Payment Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-020                  The system shall        System
-                          integrate with an       
-                          online payment gateway. 
-
-  FR-021                  The system shall allow  Customer
-                          customers to make       
-                          online payments for     
-                          table bookings.         
-
-  FR-022                  The system shall        System
-                          calculate the table     
-                          booking charge based on 
-                          the hourly table price. 
-
-  FR-023                  The system shall treat  System
-                          the booking payment as  
-                          a deposit that is       
-                          deducted during the     
-                          one-hour playing        
-                          session, according to   
-                          the supplied            
-                          requirement.            
-
-  FR-024                  The system shall        Customer
-                          support registration    
-                          fee payments for        
-                          tournaments.            
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-020 | The system shall integrate with an online payment gateway. | System |
+| FR-021 | The system shall allow customers to make online payments for table bookings. | Customer |
+| FR-022 | The system shall calculate the table booking charge based on the hourly table price. | System |
+| FR-023 | The system shall treat the booking payment as a deposit that is deducted during the one-hour playing session, according to the supplied requirement. | System |
+| FR-024 | The system shall support registration fee payments for tournaments. | Customer |
 
 **Payment clarification required:** The source states that customers pay
 the price of one hour when booking and that the deposit is deducted
@@ -483,178 +305,61 @@ must be confirmed.
 
 ### 3.1.5 Gamification and Player Ranking
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-025                  The system shall award  System
-                          points for customer     
-                          bookings.               
-
-  FR-026                  The system shall award  System
-                          points for daily        
-                          customer check-ins.     
-
-  FR-027                  The system shall        System
-                          support points for      
-                          tournament activities.  
-
-  FR-028                  The system shall        System
-                          support points for      
-                          completed tasks.        
-
-  FR-029                  The system shall allow  Employee
-                          employees to enter      
-                          player IDs and points   
-                          based on match results. 
-
-  FR-030                  The system shall        System
-                          generate a player       
-                          leaderboard based on    
-                          the total number of     
-                          wins.                   
-
-  FR-031                  The system shall        System
-                          support daily check-in  
-                          rewards.                
-
-  FR-032                  The system shall        Admin
-                          support monthly         
-                          champion recognition    
-                          and a prize             
-                          arrangement.            
-
-  FR-033                  The system shall allow  Customer
-                          customers to view their 
-                          points and ranking.     
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-025 | The system shall award points for customer bookings. | System |
+| FR-026 | The system shall award points for daily customer check-ins. | System |
+| FR-027 | The system shall support points for tournament activities. | System |
+| FR-028 | The system shall support points for completed tasks. | System |
+| FR-029 | The system shall allow employees to enter player IDs and points based on match results. | Employee |
+| FR-030 | The system shall generate a player leaderboard based on the total number of wins. | System |
+| FR-031 | The system shall support daily check-in rewards. | System |
+| FR-032 | The system shall support monthly champion recognition and a prize arrangement. | Admin |
+| FR-033 | The system shall allow customers to view their points and ranking. | Customer |
 
 ### 3.1.6 Voucher and Reward Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-034                  The system shall allow  Customer
-                          customers to redeem     
-                          points for vouchers.    
-
-  FR-035                  The system shall allow  Admin
-                          admins to issue         
-                          vouchers to customers.  
-
-  FR-036                  The system shall allow  Customer
-                          eligible vouchers to be 
-                          used for booking        
-                          discounts.              
-
-  FR-037                  The system shall        System
-                          support reward levels   
-                          such as Bronze, Silver  
-                          and Gold.               
-
-  FR-038                  The system shall allow  Customer
-                          customers to view       
-                          available vouchers and  
-                          reward information.     
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-034 | The system shall allow customers to redeem points for vouchers. | Customer |
+| FR-035 | The system shall allow admins to issue vouchers to customers. | Admin |
+| FR-036 | The system shall allow eligible vouchers to be used for booking discounts. | Customer |
+| FR-037 | The system shall support reward levels such as Bronze, Silver and Gold. | System |
+| FR-038 | The system shall allow customers to view available vouchers and reward information. | Customer |
 
 ### 3.1.7 Tournament Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-039                  The system shall allow  Admin
-                          admins to create        
-                          tournaments.            
-
-  FR-040                  The system shall        System
-                          support tournament      
-                          registration fees.      
-
-  FR-041                  The system shall        System
-                          support the             
-                          double-elimination      
-                          tournament format.      
-
-  FR-042                  The system shall        System
-                          generate tournament     
-                          brackets automatically. 
-
-  FR-043                  The system shall allow  Admin, Employee
-                          admins and employees to 
-                          manage tournament       
-                          activities.             
-
-  FR-044                  The system shall allow  Admin, Employee
-                          admins and employees to 
-                          manage tournament       
-                          results.                
-
-  FR-045                  The system shall allow  Customer
-                          customers to register   
-                          for available           
-                          tournaments.            
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-039 | The system shall allow admins to create tournaments. | Admin |
+| FR-040 | The system shall support tournament registration fees. | System |
+| FR-041 | The system shall support the double-elimination tournament format. | System |
+| FR-042 | The system shall generate tournament brackets automatically. | System |
+| FR-043 | The system shall allow admins and employees to manage tournament activities. | Admin, Employee |
+| FR-044 | The system shall allow admins and employees to manage tournament results. | Admin, Employee |
+| FR-045 | The system shall allow customers to register for available tournaments. | Customer |
 
 ### 3.1.8 Notification Management
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-046                  The system shall send   System
-                          booking confirmation    
-                          notifications.          
-
-  FR-047                  The system shall send   System
-                          booking reminder        
-                          notifications.          
-
-  FR-048                  The system shall send   System
-                          voucher reward          
-                          notifications.          
-
-  FR-049                  The system shall send   System
-                          daily check-in reward   
-                          notifications.          
-
-  FR-050                  The system shall send   System
-                          tournament              
-                          announcements.          
-
-  FR-051                  The system shall        System
-                          support WhatsApp and    
-                          email notification      
-                          channels.               
-
-  FR-052                  The system shall allow  Admin
-                          admins to send          
-                          announcements to all    
-                          customers.              
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-046 | The system shall send booking confirmation notifications. | System |
+| FR-047 | The system shall send booking reminder notifications. | System |
+| FR-048 | The system shall send voucher reward notifications. | System |
+| FR-049 | The system shall send daily check-in reward notifications. | System |
+| FR-050 | The system shall send tournament announcements. | System |
+| FR-051 | The system shall support WhatsApp and email notification channels. | System |
+| FR-052 | The system shall allow admins to send announcements to all customers. | Admin |
 
 ### 3.1.9 Reports and Activity Logs
 
-  -----------------------------------------------------------------------
-  ID                      Requirement             User
-  ----------------------- ----------------------- -----------------------
-  FR-053                  The system shall        Admin
-                          generate booking sales  
-                          reports for admins.     
-
-  FR-054                  The system shall        Admin
-                          provide booking         
-                          statistics for admins.  
-
-  FR-055                  The system shall        Admin
-                          provide relevant system 
-                          reports for admins.     
-
-  FR-056                  The system shall record System
-                          employee activities.    
-
-  FR-057                  The system shall allow  Admin
-                          admins to review        
-                          employee activity logs. 
-  -----------------------------------------------------------------------
+| ID | Requirement | User |
+| --- | --- | --- |
+| FR-053 | The system shall generate booking sales reports for admins. | Admin |
+| FR-054 | The system shall provide booking statistics for admins. | Admin |
+| FR-055 | The system shall provide relevant system reports for admins. | Admin |
+| FR-056 | The system shall record employee activities. | System |
+| FR-057 | The system shall allow admins to review employee activity logs. | Admin |
 
 ## 3.2 Non-Functional Requirements
 
@@ -664,85 +369,20 @@ requirements are limited to the quality characteristics supported by the
 stated project direction. Quantitative targets must be agreed with
 stakeholders.
 
-  -----------------------------------------------------------------------
-  ID                      Category                Requirement
-  ----------------------- ----------------------- -----------------------
-  NFR-001                 Usability               The system shall
-                                                  provide a user
-                                                  interface that
-                                                  customers, admins and
-                                                  employees can use to
-                                                  access their respective
-                                                  functions.
-
-  NFR-002                 Responsiveness          The website shall use a
-                                                  responsive design for
-                                                  different screen sizes.
-
-  NFR-003                 Compatibility           The system shall be
-                                                  accessible through a
-                                                  web browser. Specific
-                                                  supported browsers are
-                                                  TBC.
-
-  NFR-004                 Access control          The system shall
-                                                  restrict functions
-                                                  according to customer,
-                                                  admin and employee
-                                                  roles.
-
-  NFR-005                 Availability            The system shall be
-                                                  hosted online so that
-                                                  authorized users can
-                                                  access it through the
-                                                  internet. A formal
-                                                  uptime target is TBC.
-
-  NFR-006                 Data integrity          The system shall
-                                                  maintain consistent
-                                                  booking, table,
-                                                  payment, customer and
-                                                  player-result records.
-
-  NFR-007                 Maintainability         The system shall be
-                                                  developed using the
-                                                  selected Laravel
-                                                  framework, JavaScript
-                                                  and PostgreSQL
-                                                  technologies.
-
-  NFR-008                 Integration reliability The system shall
-                                                  communicate with the
-                                                  selected payment, email
-                                                  and WhatsApp service
-                                                  providers.
-
-  NFR-009                 Performance             Response-time and
-                                                  concurrent-user targets
-                                                  are TBC.
-
-  NFR-010                 Security                Authentication,
-                                                  authorization, secure
-                                                  payment handling and
-                                                  protection of customer
-                                                  information shall be
-                                                  addressed during
-                                                  implementation.
-                                                  Detailed security
-                                                  standards are TBC.
-
-  NFR-011                 Scalability             The system's data
-                                                  structure shall
-                                                  accommodate the
-                                                  multiple branches
-                                                  operated by Ant
-                                                  Billiard.
-
-  NFR-012                 Auditability            Employee activities
-                                                  shall be recorded so
-                                                  that admins can review
-                                                  operational actions.
-  -----------------------------------------------------------------------
+| ID | Category | Requirement |
+| --- | --- | --- |
+| NFR-001 | Usability | The system shall provide a user interface that customers, admins and employees can use to access their respective functions. |
+| NFR-002 | Responsiveness | The website shall use a responsive design for different screen sizes. |
+| NFR-003 | Compatibility | The system shall be accessible through a web browser. Specific supported browsers are TBC. |
+| NFR-004 | Access control | The system shall restrict functions according to customer, admin and employee roles. |
+| NFR-005 | Availability | The system shall be hosted online so that authorized users can access it through the internet. A formal uptime target is TBC. |
+| NFR-006 | Data integrity | The system shall maintain consistent booking, table, payment, customer and player-result records. |
+| NFR-007 | Maintainability | The system shall be developed using the selected Laravel framework, JavaScript and PostgreSQL technologies. |
+| NFR-008 | Integration reliability | The system shall communicate with the selected payment, email and WhatsApp service providers. |
+| NFR-009 | Performance | Response-time and concurrent-user targets are TBC. |
+| NFR-010 | Security | Authentication, authorization, secure payment handling and protection of customer information shall be addressed during implementation. Detailed security standards are TBC. |
+| NFR-011 | Scalability | The system's data structure shall accommodate the multiple branches operated by Ant Billiard. |
+| NFR-012 | Auditability | Employee activities shall be recorded so that admins can review operational actions. |
 
 ## 3.3 External Interface Requirements
 
@@ -772,23 +412,14 @@ terminals, printers or other devices is TBC.
 
 ### 3.3.3 Software Interface
 
-  -----------------------------------------------------------------------
-  Interface                           Purpose
-  ----------------------------------- -----------------------------------
-  Laravel application                 Backend application framework
-
-  JavaScript                          Frontend scripting
-
-  PostgreSQL                          Store system data
-
-  Payment gateway                     Process online booking and
-                                      tournament registration payments
-
-  Email service                       Deliver system notifications
-
-  WhatsApp service                    Deliver system notifications and
-                                      announcements
-  -----------------------------------------------------------------------
+| Interface | Purpose |
+| --- | --- |
+| Laravel application | Backend application framework |
+| JavaScript | Frontend scripting |
+| PostgreSQL | Store system data |
+| Payment gateway | Process online booking and tournament registration payments |
+| Email service | Deliver system notifications |
+| WhatsApp service | Deliver system notifications and announcements |
 
 The specific external service providers, APIs and integration protocols
 are TBC.
@@ -814,47 +445,21 @@ The system shall use **PostgreSQL** as its database management system.
 Based on the functions described in the supplied requirements, the
 database needs to store information related to:
 
-  -----------------------------------------------------------------------
-  Data area                           Information to store
-  ----------------------------------- -----------------------------------
-  User accounts                       Customer, admin and employee
-                                      account information
-
-  Branches                            Ant Billiard branch information
-
-  Tables                              Table information and current
-                                      status
-
-  Bookings                            Customer booking requests, selected
-                                      date and time, approval and
-                                      rescheduling information
-
-  Payments                            Booking and tournament payment
-                                      records
-
-  Customer check-ins                  Daily check-in records and
-                                      employee-recorded arrival check-ins
-
-  Player records                      Player identifiers and match
-                                      results
-
-  Points and rankings                 Points earned and player win
-                                      records
-
-  Rewards                             Reward levels, vouchers and
-                                      redemption records
-
-  Tournaments                         Tournament information,
-                                      registration, fees, brackets and
-                                      results
-
-  Notifications                       Notification type, recipient and
-                                      delivery information
-
-  Tasks                               Tasks and related point awards
-
-  Activity logs                       Employee actions for admin review
-  -----------------------------------------------------------------------
+| Data area | Information to store |
+| --- | --- |
+| User accounts | Customer, admin and employee account information |
+| Branches | Ant Billiard branch information |
+| Tables | Table information and current status |
+| Bookings | Customer booking requests, selected date and time, approval and rescheduling information |
+| Payments | Booking and tournament payment records |
+| Customer check-ins | Daily check-in records and employee-recorded arrival check-ins |
+| Player records | Player identifiers and match results |
+| Points and rankings | Points earned and player win records |
+| Rewards | Reward levels, vouchers and redemption records |
+| Tournaments | Tournament information, registration, fees, brackets and results |
+| Notifications | Notification type, recipient and delivery information |
+| Tasks | Tasks and related point awards |
+| Activity logs | Employee actions for admin review |
 
 ### 3.4.3 Preliminary Data Relationships
 
@@ -1338,99 +943,28 @@ The following matters are not fully specified in the supplied
 question-and-answer document. They should be resolved before finalizing
 the SRS and implementation.
 
-  -----------------------------------------------------------------------
-  No.                     Topic                   Clarification needed
-  ----------------------- ----------------------- -----------------------
-  1                       Branch selection        How customers select a
-                                                  branch and whether they
-                                                  can book tables at
-                                                  different branches
-                                                  using one account
-
-  2                       Table availability      Whether availability is
-                                                  calculated
-                                                  automatically from
-                                                  bookings or updated
-                                                  manually by employees,
-                                                  or both
-
-  3                       Booking approval        Whether payment occurs
-                                                  before or after
-                                                  employee approval
-
-  4                       Rejected booking        What happens to a
-                                                  customer's payment if
-                                                  an employee rejects a
-                                                  booking
-
-  5                       Deposit                 Exact meaning of the
-                                                  one-hour deposit and
-                                                  how it is deducted
-
-  6                       Rescheduling            Rescheduling deadline,
-                                                  number of allowed
-                                                  changes and payment
-                                                  adjustment rules
-
-  7                       Daily check-in          Whether daily check-in
-                                                  is restricted to one
-                                                  reward per calendar day
-
-  8                       Employee check-in       How employee arrival
-                                                  check-in differs
-                                                  operationally from
-                                                  daily reward check-in
-
-  9                       Points                  Exact points awarded
-                                                  for bookings,
-                                                  check-ins, tournaments
-                                                  and tasks
-
-  10                      Leaderboard             Ranking period and
-                                                  tie-breaking rules
-
-  11                      Monthly champion        How the monthly
-                                                  champion is selected
-                                                  and what prize is
-                                                  awarded
-
-  12                      Reward levels           Point thresholds and
-                                                  benefits for Bronze,
-                                                  Silver and Gold
-
-  13                      Vouchers                Voucher expiry,
-                                                  discount type, minimum
-                                                  spend and usage limits
-
-  14                      Tournaments             Registration limits,
-                                                  tournament dates, match
-                                                  rules and participant
-                                                  eligibility
-
-  15                      Tournament payment      Payment handling and
-                                                  refund rules
-
-  16                      Notifications           Selected WhatsApp and
-                                                  email providers and
-                                                  notification triggers
-
-  17                      Reports                 Required report
-                                                  formats, filters and
-                                                  date ranges
-
-  18                      Security                Password, session,
-                                                  access-control and
-                                                  data-protection
-                                                  requirements
-
-  19                      Performance             Expected number of
-                                                  users and acceptable
-                                                  response times
-
-  20                      Hosting                 Hosting provider,
-                                                  backup schedule and
-                                                  availability target
-  -----------------------------------------------------------------------
+| No. | Topic | Clarification needed |
+| --- | --- | --- |
+| 1 | Branch selection | How customers select a branch and whether they can book tables at different branches using one account |
+| 2 | Table availability | Whether availability is calculated automatically from bookings or updated manually by employees, or both |
+| 3 | Booking approval | Whether payment occurs before or after employee approval |
+| 4 | Rejected booking | What happens to a customer's payment if an employee rejects a booking |
+| 5 | Deposit | Exact meaning of the one-hour deposit and how it is deducted |
+| 6 | Rescheduling | Rescheduling deadline, number of allowed changes and payment adjustment rules |
+| 7 | Daily check-in | Whether daily check-in is restricted to one reward per calendar day |
+| 8 | Employee check-in | How employee arrival check-in differs operationally from daily reward check-in |
+| 9 | Points | Exact points awarded for bookings, check-ins, tournaments and tasks |
+| 10 | Leaderboard | Ranking period and tie-breaking rules |
+| 11 | Monthly champion | How the monthly champion is selected and what prize is awarded |
+| 12 | Reward levels | Point thresholds and benefits for Bronze, Silver and Gold |
+| 13 | Vouchers | Voucher expiry, discount type, minimum spend and usage limits |
+| 14 | Tournaments | Registration limits, tournament dates, match rules and participant eligibility |
+| 15 | Tournament payment | Payment handling and refund rules |
+| 16 | Notifications | Selected WhatsApp and email providers and notification triggers |
+| 17 | Reports | Required report formats, filters and date ranges |
+| 18 | Security | Password, session, access-control and data-protection requirements |
+| 19 | Performance | Expected number of users and acceptable response times |
+| 20 | Hosting | Hosting provider, backup schedule and availability target |
 
 ------------------------------------------------------------------------
 
