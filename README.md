@@ -51,8 +51,7 @@ The system covers:
 -   Admin sales reports, booking statistics and system reports.
 -   Employee activity logging.
 
-The system will be hosted online and will use Laravel, JavaScript and
-PostgreSQL. Integration with a payment gateway, email service and
+The system will be hosted online and will use -----. Integration with a payment gateway, email service and
 WhatsApp service is required.
 
 The source requirements do not specify the exact payment provider,
@@ -176,9 +175,9 @@ The system is expected to operate in the following environment:
 | Application platform | Web-based application |
 | User access | Web browser |
 | Interface | Responsive website |
-| Backend framework | Laravel |
-| Frontend scripting | JavaScript |
-| Database management system | PostgreSQL |
+| Backend framework | --- |
+| Frontend scripting | --- |
+| Database management system | --- |
 | Hosting | Online hosting |
 | External services | Payment gateway, email service and WhatsApp service |
 
@@ -191,14 +190,14 @@ The following constraints are stated or implied by the supplied project
 requirements:
 
 1.  The system must be developed as a responsive website.
-2.  The selected backend framework is Laravel.
-3.  JavaScript will be used for frontend scripting.
-4.  PostgreSQL will be used as the database.
+2.  The selected backend framework is ---.
+3.  --- will be used for frontend scripting.
+4.  --- will be used as the database.
 5.  The system must support one Ant Billiard business with multiple
     branches.
 6.  Customers must log in before viewing table availability.
 7.  Booking requests require employee approval.
-8.  Customers cannot cancel bookings; they can only request
+8.  Customers cannot cancel bookings, they can only request
     rescheduling.
 9.  Only admins can create tournaments.
 10. Employee accounts can only be registered by admins.
@@ -235,7 +234,7 @@ should be confirmed with the stakeholders:
 The system depends on:
 
 -   An online hosting environment.
--   A working PostgreSQL database.
+-   A working --- database.
 -   A payment gateway for online booking payments and tournament
     registration fees.
 -   An email service for sending notifications.
@@ -414,9 +413,9 @@ terminals, printers or other devices is TBC.
 
 | Interface | Purpose |
 | --- | --- |
-| Laravel application | Backend application framework |
-| JavaScript | Frontend scripting |
-| PostgreSQL | Store system data |
+| --- | Backend application framework |
+| --- | Frontend scripting |
+| --- | Store system data |
 | Payment gateway | Process online booking and tournament registration payments |
 | Email service | Deliver system notifications |
 | WhatsApp service | Deliver system notifications and announcements |
@@ -438,7 +437,7 @@ The exact communication protocols and provider configurations are TBC.
 
 ### 3.4.1 Database Platform
 
-The system shall use **PostgreSQL** as its database management system.
+The system shall use **---** as its database management system.
 
 ### 3.4.2 Data Requirements
 
