@@ -51,7 +51,7 @@ The system covers:
 -   Admin sales reports, booking statistics and system reports.
 -   Employee activity logging.
 
-The system will be hosted online and will use -----. Integration with a payment gateway, email service and
+The system will be hosted online and will use laravel, react and postgresql. Integration with a payment gateway, email service and
 WhatsApp service is required.
 
 The source requirements do not specify the exact payment provider,
@@ -175,9 +175,9 @@ The system is expected to operate in the following environment:
 | Application platform | Web-based application |
 | User access | Web browser |
 | Interface | Responsive website |
-| Backend framework | --- |
-| Frontend scripting | --- |
-| Database management system | --- |
+| Backend framework | Laravel |
+| Frontend scripting | React |
+| Database management system | Postgresql |
 | Hosting | Online hosting |
 | External services | Payment gateway, email service and WhatsApp service |
 
@@ -190,9 +190,9 @@ The following constraints are stated or implied by the supplied project
 requirements:
 
 1.  The system must be developed as a responsive website.
-2.  The selected backend framework is ---.
-3.  --- will be used for frontend scripting.
-4.  --- will be used as the database.
+2.  The selected backend framework is Laravel.
+3.  React will be used for frontend scripting.
+4.  Postgresql will be used as the database.
 5.  The system must support one Ant Billiard business with multiple
     branches.
 6.  Customers must log in before viewing table availability.
@@ -234,7 +234,7 @@ should be confirmed with the stakeholders:
 The system depends on:
 
 -   An online hosting environment.
--   A working --- database.
+-   A working Postgresql database.
 -   A payment gateway for online booking payments and tournament
     registration fees.
 -   An email service for sending notifications.
@@ -413,9 +413,9 @@ terminals, printers or other devices is TBC.
 
 | Interface | Purpose |
 | --- | --- |
-| --- | Backend application framework |
-| --- | Frontend scripting |
-| --- | Store system data |
+| Laravel | Backend application framework |
+| React | Frontend scripting |
+| Postgresql | Store system data |
 | Payment gateway | Process online booking and tournament registration payments |
 | Email service | Deliver system notifications |
 | WhatsApp service | Deliver system notifications and announcements |
@@ -437,7 +437,7 @@ The exact communication protocols and provider configurations are TBC.
 
 ### 3.4.1 Database Platform
 
-The system shall use **---** as its database management system.
+The system shall use **Postgresql** as its database management system.
 
 ### 3.4.2 Data Requirements
 
